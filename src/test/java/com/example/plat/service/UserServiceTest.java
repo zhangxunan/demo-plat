@@ -1,11 +1,16 @@
 package com.example.plat.service;
 
+import com.example.plat.DemoPlatApplication;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.*;
-
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes = DemoPlatApplication.class)
 public class UserServiceTest {
 
     @Before
@@ -18,5 +23,6 @@ public class UserServiceTest {
 
     @Test
     public void invalid() {
+        Assert.fail("123");
     }
 }
